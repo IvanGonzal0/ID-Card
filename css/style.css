@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 
+/* ESTILO GENERAL */
 body {
   background-image: url("../img/background.jpg");
   background-size: cover;
@@ -11,6 +12,7 @@ body {
   height: 100vh;
 }
 
+/* CARD CONTAINER */
 .container {
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
@@ -31,6 +33,7 @@ body {
   height: 100%;
 }
 
+/* CARD IMAGE */
 .banner-image {
   background-image: url("../img/selfie.png");
   background-position: initial;
@@ -42,6 +45,7 @@ body {
   border-image-slice: 1;
 }
 
+/* NAME */
 h1 {
   font-family: "Righteous", sans-serif;
   color: rgba(255, 255, 255, 0.98);
@@ -49,6 +53,7 @@ h1 {
   font-size: 2.4rem;
 }
 
+/* DESCRIPTION */
 p {
   color: black;
   font-family: "Lato", sans-serif;
@@ -58,4 +63,33 @@ p {
   line-height: 150%;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+/* BUTTON */
+.button-wrapper {
+  margin-top: 18px;
+}
+
+.btn {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.outline {
+  background: transparent;
+  color: black;
+  font-weight: bold;
+  border: 2px solid black;
+  transition: all 0.3s ease;
+}
+
+.outline:hover {
+  transform: scale(1.125);
+  color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
 }
